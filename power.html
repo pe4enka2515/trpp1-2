@@ -1,7 +1,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/videos.css">
+	<SCRIPT type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>
 </head>
 <body>
 	<header class="header">
@@ -12,14 +14,21 @@
 				<img src="assets/images/ironread.png" alt="">
 			</div>
 		</a>
+
+		<select id="theme">
+			<option value="light">Light</option>
+			<option value="dark">Dark</option>
+		</select>
+
+		<div id="rain">Дождь</div>
 		
 		<ul class="nav" id="myNav">
+			<li class="icon"><a href="javascript:void(0);" style="font-size: 15px;" onclick="burger()">&#9776</a></li>
 			<li><a class="nav_link" href="videos.html">Видеокарты</a></li>
 			<li><a class="nav_link" href="proc.html">Процессоры</a></li>
 			<li><a class="nav_link" href="mem.html">Память</a></li>
 			<li><a class="nav_link" href="moth.html">Платы</a></li>
 			<li><a class="nav_link" href="power.html">Питание</a></li>
-			<li class="icon"><a href="javascript:void(0);" style="font-size: 15px;" onclick="burger()">&#9776</a></li>
 		</ul>
 </header>
 <section>
@@ -30,7 +39,7 @@
 				При сборке ПК многие не уделяют должного внимания блоку питания — его выбирают в последнюю очередь и приобретают на то, что осталось после всех остальных покупок. Это не совсем верный подход: блок питания — это не та деталь, на которой можно сэкономить. Экономия на первом этапе может привести к большим тратам в дальнейшем.<br><br>Дело в том, что при экстренной нагрузке блок питания может не только выйти из строя сам, но и повлиять на остальные комплектующие. Если вы приобрели ненадежный блок питания, то при экстренной нагрузке его поломка приведет к внезапному и дорогому апгрейду.
 			</p>
 			<div class="acs_image">
-				<img src="assets/images/power1.jpg" alt="">
+				<img src="assets/images/power1.jpg" alt="" class="image">
 			</div>
 		</div>
 		<h3>Мощность</h3>
@@ -43,7 +52,7 @@
 				<li>500 Вт. Для недорогих игровых компьютеров вполне хватит 500 Вт мощности. Подойдут Xilence Performance C XN042; DeepCool Nova DN500; Cooler Master MasterWatt Lite MPX-5001-ACABW-ES, Zalman Wattbit 83+ и Zalman ZM500-LXII.</li>
 			</ul>
 			<div class="acs_image">
-				<img src="assets/images/power3.png" alt="">
+				<img src="assets/images/power3.png" alt="" class="image">
 			</div>
 		</div>
 		<div class="inform_image">
@@ -53,7 +62,7 @@
 				<li>750 Вт. Самые мощные блоки питания. К этой категории относятся Cooler Master MWE MPE-7501-ACABW-EU и Thermaltake Нева W0427RE.</li>
 			</ul>
 			<div class="acs_image">
-				<img src="assets/images/power2.jpg" alt="">
+				<img src="assets/images/power2.jpg" alt="" class="image">
 			</div>
 		</div>
 	</div>
@@ -69,5 +78,7 @@
 	</nav>
 </footer>
 <script src="menu.js"></script>
+<script src="night-mode.js"></script>
+<script src="ajax.js"></script>
 </body>
 </html>

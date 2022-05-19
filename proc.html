@@ -1,7 +1,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/videos.css">
+	<SCRIPT type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>
 </head>
 <body>
 	<header class="header">
@@ -13,13 +15,20 @@
 			</div>
 		</a>
 		
+		<select id="theme">
+			<option value="light">Light</option>
+			<option value="dark">Dark</option>
+		</select>
+
+		<div id="rain">Дождь</div>
+		
 		<ul class="nav" id="myNav">
+			<li class="icon"><a href="javascript:void(0);" style="font-size: 15px;" onclick="burger()">&#9776</a></li>
 			<li><a class="nav_link" href="videos.html">Видеокарты</a></li>
 			<li><a class="nav_link" href="proc.html">Процессоры</a></li>
 			<li><a class="nav_link" href="mem.html">Память</a></li>
 			<li><a class="nav_link" href="moth.html">Платы</a></li>
 			<li><a class="nav_link" href="power.html">Питание</a></li>
-			<li class="icon"><a href="javascript:void(0);" style="font-size: 15px;" onclick="burger()">&#9776</a></li>
 		</ul>
 </header>
 
@@ -62,7 +71,7 @@
 				Универсальный, производительный процессор, который полностью сможет удовлетворить базовые потребности пользователя. Он подойдёт для работы с текстовыми файлами, таблицами, простыми фоторедакторами. Это универсальный вариант для домашнего и офисного использования.<br><br>Это гибридное устройство. К нему не нужна дополнительная видеокарта. Есть встроенный видеопроцессор Intel HD Graphics 510 с тактовой частотой 1050 МГц (обрабатывает графику перед демонстрацией на мониторе ПК). У процессора 2 ядра по 3,3 МГц. Особенность этого ЦП — технология Enhanced SpeedStep, понижающая уровень энергопотребления. В комплекте нет кулера, его нужно докупать отдельно. 
 			</p>
 			<div class="acs_image">
-				<img src="assets/images/8.jpg" alt="">
+				<img src="assets/images/8.jpg" alt="" class="image">
 			</div>
 		</div>
 		<h3>Для бюджетного игрового ПК</h3>
@@ -84,7 +93,7 @@
 				Процессор, с которым можно насладиться большинством современных игр на средних и высоких настройках. ЦП гибридный, со встроенной видеокартой. Совместим с материнскими платами 500 серии и некоторыми материнскими платами 400 серии. Не составит труда подобрать остальные комплектующие.<br>В комплекте есть кулер. Но при необходимости можно заменить его на более мощный. Это оптимальный процессор, гарантирующий хорошую производительность в играх.
 			</p>
 			<div class="acs_image">
-				<img src="assets/images/9.jpg" alt="">
+				<img src="assets/images/9.jpg" alt="" class="image">
 			</div>
 		</div>
 		<p class="acs_pc">
@@ -121,7 +130,7 @@
 				Процессор AMD Ryzen Threadripper PRO 3955WX<br><br>16 ядер обеспечивают потрясающую мощность компьютера. На базе такого устройства собирают универсальную машину для работы со сложными программами, которые требуют обработки большого количества данных. Если изначальных мощностей недостаточно, можно «разогнать». Это возможно благодаря интерфейсу PCIe 4.0.
 			</p>
 			<div class="acs_image">
-				<img src="assets/images/11.jpg" alt="">
+				<img src="assets/images/11.jpg" alt="" class="image">
 			</div>
 		</div>
 	</div>
@@ -137,5 +146,7 @@
 	</nav>
 </footer>
 <script src="menu.js"></script>
+<script src="night-mode.js"></script>
+<script src="ajax.js"></script>
 </body>
 </html>

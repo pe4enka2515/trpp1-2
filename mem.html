@@ -1,7 +1,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/videos.css">
+	<SCRIPT type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>
 </head>
 <body>
 	<header class="header">
@@ -12,14 +14,21 @@
 				<img src="assets/images/ironread.png" alt="">
 			</div>
 		</a>
+
+		<select id="theme">
+			<option value="light">Light</option>
+			<option value="dark">Dark</option>
+		</select>
+
+		<div id="rain">Дождь</div>
 		
 		<ul class="nav" id="myNav">
+			<li class="icon"><a href="javascript:void(0);" style="font-size: 15px;" onclick="burger()">&#9776</a></li>
 			<li><a class="nav_link" href="videos.html">Видеокарты</a></li>
 			<li><a class="nav_link" href="proc.html">Процессоры</a></li>
 			<li><a class="nav_link" href="mem.html">Память</a></li>
 			<li><a class="nav_link" href="moth.html">Платы</a></li>
 			<li><a class="nav_link" href="power.html">Питание</a></li>
-			<li class="icon"><a href="javascript:void(0);" style="font-size: 15px;" onclick="burger()">&#9776</a></li>
 		</ul>
 </header>
 
@@ -35,7 +44,7 @@
 				Всего на рынке 4 поколения оперативной памяти: устаревшие DDR и DDR2, устаревающее DDR3 и актуальное DDR4. Если вы собираете ПК в 2020 году, есть смысл выбирать именно DDR4. Это выгодно в долгосрочной перспективе: ваша оперативная память не устареет в ближайшие несколько лет.<br><br>Уже сейчас можно встретить информацию о будущем поколении оперативной памяти — DDR5. Даже после ее выхода память DDR4 не будет считаться устаревшей — все таки смена поколений занимает не один год.<br><br>Обратите внимание, что у памяти нет обратной совместимости: нельзя установить модуль четвертого поколения в материнскую плату со слотами для третьего поколения. Верно и обратное: в новую плату со слотами четвертого поколения не получится установить модуль DDR3. Они физически не подходят друг к другу, потому что у каждого поколения свой ключ-коннектор.
 			</p>
 			<div class="acs_image">
-				<img src="assets/images/mem1.png" alt="">
+				<img src="assets/images/mem1.png" alt="" class="image">
 			</div>
 		</div>
 		<h3>Типы памяти</h3>
@@ -52,7 +61,7 @@
 				Необходимый минимум в 2020 году. Одна только операционная система Windows 10 потребляет два или три гигабайта. Оставшейся памяти хватит только на браузер с несколькими вкладками. Для игровых ПК такой объем памяти не подойдет — на 4 гигабайтах современные проекты запускаются с частотой кадров до 10 кадров в секунду, что очень мало даже для нетребовательных игроков.<br><br>Если вы собираете ПК сейчас, лучше сразу приобретать от 8 гигабайт оперативной памяти — производительность и удобство пользования будет сильно выше при довольно небольших затратах.<br><br>Тем не менее, модули по 4 гигабайта могут пригодится в паре для двуканального режима. Доступен выбор из таких моделей, как:
 			</p>
 			<div class="acs_image">
-				<img src="assets/images/mem2.jpg" alt="">
+				<img src="assets/images/mem2.jpg" alt="" class="image">
 			</div>
 		</div>
 		<ul type="circle">
@@ -76,7 +85,7 @@
 				Оптимальный вариант для игрового ПК. Многие ААА-проекты указывают 16 гигабайт в качестве рекомендуемых системных требований. Такой объем оперативной памяти позволяет работать с десятками вкладок в браузере и профессиональными приложениями для работы с видео, музыкой и графикой. Тем не менее, 16 гигабайт — не предел: уже есть программы с рекомендованными 32 гигабайтами.<br><br>Среди модулей памяти объемом 16 Гб можно выбрать:
 			</p>
 			<div class="acs_image">
-				<img src="assets/images/mem3.jpg" alt="">
+				<img src="assets/images/mem3.jpg" alt="" class="image">
 			</div>
 		</div>
 		<ul type="circle">
@@ -98,5 +107,7 @@
 	</nav>
 </footer>
 <script src="menu.js"></script>
+<script src="night-mode.js"></script>
+<script src="ajax.js"></script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -11,17 +12,24 @@
 		<div class="header_inner">
 		<a href="index.html">
 			<div class="header_logo">
-				<img src="assets/images/ironread.png" alt="">
+				<img src="assets/images/ironread.png" alt="Логотип ironread">
 			</div>
 		</a>
+
+		<select id="theme">
+			<option value="light">Light</option>
+			<option value="dark">Dark</option>
+		</select>
+
+		<div id="rain">Дождь</div>
 		
 		<ul class="nav" id="myNav">
+			<li class="icon"><a href="javascript:void(0);" style="font-size: 15px;" onclick="burger()">&#9776</a></li>
 			<li><a class="nav_link" href="videos.html">Видеокарты</a></li>
 			<li><a class="nav_link" href="proc.html">Процессоры</a></li>
 			<li><a class="nav_link" href="mem.html">Память</a></li>
 			<li><a class="nav_link" href="moth.html">Платы</a></li>
 			<li><a class="nav_link" href="power.html">Питание</a></li>
-			<li class="icon"><a href="javascript:void(0);" style="font-size: 15px;" onclick="burger()">&#9776</a></li>
 		</ul>
 		</div>
 		</div>
@@ -30,11 +38,26 @@
 <div class="intro">
 	<div class="container">
 		<div class="intro-inner">
-			<h2 class="intro-suptitle">Все о железе</h2>
-			<h1 class="intro_title">Информация о комплектующих для вашего ПК</h1>
+			<div class="one_col">
+				<h2 class="intro-suptitle">Все о железе</h2>
+				<h1 class="intro_title">Информация о комплектующих для вашего ПК</h1>
+			</div>
+			<div class="two_col">
+				<img src="assets/images/pc.png" class="img_pc" usemap="#Navigation">
+			</div>
 		</div>
 	</div>
 </div>
+
+<map name="Navigation">
+	<area shape="poly" coords="36,294,42,296,127,285,130,287,135,286,135,291,128,294,163,302,165,305,192,316,193,319,206,323,
+	214,321,220,321,226,323,226,330,133,350,39,307,39,304,36,304," href="videos.html" alt="ссылка на Видеокарты" class="cord_img">
+	<area shape="poly" coords="80,93,109,86,111,89,111,128,109,129,83,131,80,129" href="proc.html" alt="ссылка на Процессоры">
+	<area shape="poly" coords="102,175,120,174,131,183,131,261,114,263,102,255" href="mem.html" alt="ссылка на Память">
+	<area shape="poly" coords="215,108,227,110,228,169,238,169,238,190,245,199,271,213,284,218,294,220,296,290,214,272" 
+	href="moth.html" alt="ссылка на ОЗУ">
+	<area shape="poly" coords="131,61,182,46,227,54,227,106,214,108,131,103" href="power.html" alt="ссылка на БП">
+</map>
 
 <section>
 	<div class="container">
@@ -86,6 +109,8 @@
 	</nav>
 </footer>
 <script src="menu.js"></script>
+<script src="night-mode.js"></script>
+<script src="rain-night.js"></script>
 </body>
 </html>
 

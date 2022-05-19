@@ -1,7 +1,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/videos.css">
+	<SCRIPT type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>
 </head>
 <body>
 	<header class="header">
@@ -12,15 +14,23 @@
 				<img src="assets/images/ironread.png" alt="">
 			</div>
 		</a>
+
+		<select id="theme">
+			<option value="light">Light</option>
+			<option value="dark">Dark</option>
+		</select>
+
+		<div id="rain">Дождь</div>
 		
 		<ul class="nav" id="myNav">
+			<li class="icon"><a href="javascript:void(0);" style="font-size: 15px;" onclick="burger()">&#9776</a></li>
 			<li><a class="nav_link" href="videos.html">Видеокарты</a></li>
 			<li><a class="nav_link" href="proc.html">Процессоры</a></li>
 			<li><a class="nav_link" href="mem.html">Память</a></li>
 			<li><a class="nav_link" href="moth.html">Платы</a></li>
 			<li><a class="nav_link" href="power.html">Питание</a></li>
-			<li class="icon"><a href="javascript:void(0);" style="font-size: 15px;" onclick="burger()">&#9776</a></li>
 		</ul>
+		</div>
 </header>
 <section>
 	<div class="inform">
@@ -30,7 +40,7 @@
 				Обычно значительная часть бюджета, выделенного на сборку ПК, уходит на процессор и видеокарту, но не стоит забывать, что в основе любой системы лежит материнская плата. Именно на неё устанавливаются все комплектующие, именно её форм-фактор влияет на размеры вашего компьютера, а чипсет и сокет определяют, какие процессоры вы можете установить.<br><br>Материнские платы могут существенно отличаться по оснащённости: если простые модели можно приобрести дешевле 4000 рублей, то платы высшего класса легко преодолевают планку в 35000 рублей. Давайте разберёмся с возможными сложностями и поможем вам выбрать правильную модель под ваши нужды и требования — и одновременно сэкономить ваши средства.
 			</p>
 			<div class="acs_image">
-				<img src="assets/images/moth1.jpeg">
+				<img src="assets/images/moth1.jpeg" class = "image">
 			</div>
 		</div>
 		<h3>Выберите правильный сокет для вашего процессора</h3>
@@ -56,7 +66,7 @@
 				<li>От $100 до $150<br>Платы на чипсете Z370, позволяющем разгонять процессоры Intel, начинаются у нижней границы этого ценового диапазона. Здесь же появляется больше плат AMD на чипсетах высокого класса (X470) и с премиальными функциями вроде RGB-подсветки и Wi-Fi</li>
 			</ul>
 			<div class="acs_image">
-				<img src="assets/images/moth3.jpeg" alt="">
+				<img src="assets/images/moth3.jpeg" alt="" class = "image">
 			</div>
 		</div>
 		<div class="inform_image">
@@ -65,7 +75,7 @@
 				<li>От $200 и выше<br>Это по-настоящему премиальный класс для массовых платформ, и здесь вы найдёте самые качественные комплектующие, гигантские радиаторы необычного дизайна, а также кожухи для портов ввода-вывода, создающие особый внешний вид. Такие платы также располагают возможностями экстремального разгона, которые не требуются при сборке обычных систем. Здесь же вы найдёте платы для HEDT-процессоров с очень большим числом ядер — Intel Core X и AMD Threadripper. Цены на платы для Threadripper начинаются примерно с $300</li>
 			</ul>
 			<div class="acs_image">
-				<img src="assets/images/moth2.jpg" alt="">
+				<img src="assets/images/moth2.jpg" alt="" class = "image">
 			</div>
 		</div>
 	</div>
@@ -81,5 +91,7 @@
 	</nav>
 </footer>
 <script src="menu.js"></script>
+<script src="night-mode.js"></script>
+<script src="ajax.js"></script>
 </body>
 </html>

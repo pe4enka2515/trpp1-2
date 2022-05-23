@@ -4,6 +4,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.maphilight.js"></script>
+	<script type="text/javascript" src="map_animation.js"></script>
 </head>
 <body>
 
@@ -43,20 +46,26 @@
 				<h1 class="intro_title">Информация о комплектующих для вашего ПК</h1>
 			</div>
 			<div class="two_col">
-				<img src="assets/images/pc.png" class="img_pc" usemap="#Navigation">
+				<img src="assets/images/pc.png" class="map" usemap="#Map">
 			</div>
 		</div>
 	</div>
 </div>
 
-<map name="Navigation">
+<map name="Map">
 	<area shape="poly" coords="36,294,42,296,127,285,130,287,135,286,135,291,128,294,163,302,165,305,192,316,193,319,206,323,
-	214,321,220,321,226,323,226,330,133,350,39,307,39,304,36,304," href="videos.html" alt="ссылка на Видеокарты" class="cord_img">
-	<area shape="poly" coords="80,93,109,86,111,89,111,128,109,129,83,131,80,129" href="proc.html" alt="ссылка на Процессоры">
-	<area shape="poly" coords="102,175,120,174,131,183,131,261,114,263,102,255" href="mem.html" alt="ссылка на Память">
-	<area shape="poly" coords="215,108,227,110,228,169,238,169,238,190,245,199,271,213,284,218,294,220,296,290,214,272" 
-	href="moth.html" alt="ссылка на ОЗУ">
-	<area shape="poly" coords="131,61,182,46,227,54,227,106,214,108,131,103" href="power.html" alt="ссылка на БП">
+	214,321,220,321,226,323,226,330,133,350,39,307,39,304,36,304," href="videos.html" alt="ссылка на Видеокарты" title="Видеокарта"
+	data-maphilight='{"strokeColor":"ca56cf","strokeWidth":3,"fillColor":"cf321d","fillOpacity":0.5}'>
+	<area shape="poly" coords="80,93,109,86,111,89,111,128,109,129,83,131,80,129" href="proc.html" alt="ссылка на Процессоры"
+	title="Процессор" data-maphilight='{"strokeColor":"ca56cf","strokeWidth":3,"fillColor":"cf321d","fillOpacity":0.5}'>
+	<area shape="poly" coords="102,174,120,174,120,182,131,182,131,261,114,263,114,255,102,255" href="mem.html" alt="ссылка на Память" 
+	title="Оперативная память" data-maphilight='{"strokeColor":"ca56cf","strokeWidth":3,"fillColor":"cf321d","fillOpacity":0.5}'>
+	<area shape="poly" coords="214,111,227,110,228,169,238,169,238,190,245,199,271,213,284,218,294,220,296,290,214,272,209,269,209,
+	254,214,254,214,251,209,250,209,241,214,241,214,225,209,224,209,195,214,194,214,187,197,187,197,174,199,172,199,161,204,161,204,
+	147,199,147,199,126,214,126,214,122,199,121,199,112,214,112" href="moth.html" alt="ссылка на Материнские платы" title="Материнская плата"
+	data-maphilight='{"strokeColor":"ca56cf","strokeWidth":3,"fillColor":"cf321d","fillOpacity":0.5}'>
+	<area shape="poly" coords="131,61,182,46,227,54,227,106,214,108,131,103" href="power.html" alt="ссылка на БП" 
+	title="Блок питания" data-maphilight='{"strokeColor":"ca56cf","strokeWidth":3,"fillColor":"cf321d","fillOpacity":0.5}'>
 </map>
 
 <section>
@@ -110,7 +119,6 @@
 </footer>
 <script src="menu.js"></script>
 <script src="night-mode.js"></script>
-<script src="rain-night.js"></script>
 </body>
 </html>
 
